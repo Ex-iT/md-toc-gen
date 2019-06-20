@@ -8,7 +8,7 @@ This script takes all level 2 headings in a Markdown file and generators a TOC f
 
 Install dependencies by running: `npm install`.
 
-The TOC is placed between the following comments:
+The TOC is placed between the first TOC comments in the file:
 
 ```
 <!-- START TOC -->
