@@ -9,7 +9,7 @@ const endToc = '<!-- END TOC -->';
 const listCharacter = '-';
 const excludedHeading = 'Table of Contents';
 const headingDepth = 2;
-const tocPlaceholder = new RegExp(`${startToc}.*[\\s\\S]*${endToc}`);
+const tocPlaceholder = new RegExp(`${startToc}.*[\\s\\S]*?${endToc}`);
 
 if (args.length && !!args[0].match(/.*\.(md|markdown)$/)) {
 	const file = args[0];
