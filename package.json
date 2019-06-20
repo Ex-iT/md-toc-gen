@@ -1,0 +1,13 @@
+{
+  "name": "md-toc-gen",
+  "version": "0.0.1",
+  "description": "Generate a TOC for Markdown files",
+  "scripts": {
+    "start": "node index.js"
+  },
+  "author": "Ex-iT",
+  "dependencies": {
+    "marked": "^0.6.2",
+    "slugify": "^1.3.4"
+  }
+}
