@@ -2,7 +2,7 @@
 
 Crude table of contents generator for Markdown files.
 
-This script takes all level 2 headings in a Markdown file and generators a TOC for them. A heading named `Table of Contents` is ignored.
+This script takes all level 2 to 6 headings in a Markdown file and generators a TOC with them. A heading named `Table of Contents` is ignored by default.
 
 ## How to use
 
