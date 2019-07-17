@@ -13,7 +13,7 @@ const indentSize = 2;
 const args = process.argv.slice(2);
 const startToc = '<!-- START TOC -->';
 const endToc = '<!-- END TOC -->';
-const tocPlaceholder = new RegExp(`${startToc}.*[\\s\\S]*?${endToc}`);
+const tocPlaceholder = new RegExp(`${startToc}.*[\\s\\S]*?${endToc}`, 'g');
 
 if (args.length && !!args[0].match(/.*\.(md|markdown)$/)) {
 	const file = args[0];
@@ -44,7 +44,7 @@ if (args.length && !!args[0].match(/.*\.(md|markdown)$/)) {
 					}
 				});
 			} else {
-				console.log(`[!] No level ${headingDepthStart} headings found in ${file}`);
+				console.log(`[!] No matching headings found in ${file}`);
 				process.exit();
 			}
 		}
