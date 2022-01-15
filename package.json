@@ -7,7 +7,7 @@
   },
   "author": "Ex-iT",
   "dependencies": {
-    "marked": "^2.0.3",
+    "marked": "^4.0.10",
     "slugify": "^1.5.0"
   }
 }
